@@ -62,42 +62,16 @@
         font-size: 14px;
     }
 
-    /* .containerLogin {
-        width: 90%;
-        padding: 16px 12px;
-    } */
-
-    /* .containerLogin h1 {
-        font-size: 28px;
-    } */
-
-    /* .inputbox {
-        height: 45px;
-    } */
-
-    /* .inputbox input {
-        font-size: 14px;
-    } */
-
-    /* .remember-forgot {
-        font-size: 13px;
-        flex-direction: row;
-        gap: 8px;
-    } */
-
 }
 
 header {
     position: relative;
     top: 0;
     left: 0;
-
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 30px;
     background-color: #202022
 }
@@ -157,10 +131,8 @@ body {
 
 .inputbox input{
     width: 100%;
-    height: 100%;        /*100% desses ocupa os 50px e da margin do .inputbox */
-
+    height: 100%;    
     border: 2px solid #434343;
-    outline: none;
     font-size: 16px;
     color: black;
     padding: 20px 45px 20px 20px;
@@ -176,8 +148,7 @@ body {
     height: 20px;
     font-size: 20px;
     top: 50%;
-    right: 20px;        /*apenas o top quebra o input i,precisa do right*/
-
+    right: 20px;      
     transform: translateY(-50%);
     color: black;
 }
