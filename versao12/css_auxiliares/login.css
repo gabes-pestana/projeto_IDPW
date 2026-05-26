@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logotipo {
+        font-size: 26px;
+    }
+
+    .topoPag {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .containerLogin {
+        width: 95%;
+        padding: 25px 20px;
+    }
+
+    .containerLogin h1 {
+        font-size: 30px;
+    }
+
+    .inputbox {
+        height: 45px;
+    }
+
+    .inputbox input {
+        font-size: 14px;
+    }
+
+    .remember-forgot {
+        font-size: 13px;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    header {
+        padding: 12px 18px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logotipo {
+        font-size: 26px;
+    }
+
+    .topoPag {
+        font-size: 14px;
+    }
+
+    /* .containerLogin {
+        width: 90%;
+        padding: 16px 12px;
+    } */
+
+    /* .containerLogin h1 {
+        font-size: 28px;
+    } */
+
+    /* .inputbox {
+        height: 45px;
+    } */
+
+    /* .inputbox input {
+        font-size: 14px;
+    } */
+
+    /* .remember-forgot {
+        font-size: 13px;
+        flex-direction: row;
+        gap: 8px;
+    } */
+
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.logotipo {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.topoPag a {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.topoPag a:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+.containerLogin {
+    max-width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin-top: 40px;
+    background-color: #1b3763;
+}
+
+.containerLogin h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;        /*100% desses ocupa os 50px e da margin do .inputbox */
+
+    border: 2px solid #434343;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.inputbox input:placeholder {
+    color: #434343;
+}
+
+.inputbox i{
+    position: absolute;
+    height: 20px;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;        /*apenas o top quebra o input i,precisa do right*/
+
+    transform: translateY(-50%);
+    color: black;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color:white;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    /* box-shadow: 0 0 10px; rgba(0, 0, 0, .1); */
+}
+
+.login:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
+}
+
+.registerLink {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
+
+.registerLink a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.registerLink a:hover {
+    text-decoration: underline;
+}
