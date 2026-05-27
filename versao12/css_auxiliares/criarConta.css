@@ -129,3 +129,11 @@ body {
     transition: 0.5s;
 }
 
+@media (max-width: 600px){
+
+    .conteiner {
+        max-width: 325px;
+        margin-top: 27px;
+    }
+
+}
