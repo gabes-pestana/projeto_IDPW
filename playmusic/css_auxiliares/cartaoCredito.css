@@ -8,14 +8,10 @@ header {
     position: relative;
     top: 0;
     left: 0;
-
     width: 100%;
-    z-index: 1000;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 30px;
     background-color: #202022
 }
@@ -26,7 +22,7 @@ header {
     font-weight: bold;
 }
 
-.topoPag a {
+header a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -35,7 +31,7 @@ header {
     color: black;
 }
 
-.topoPag a:hover {
+header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
@@ -79,9 +75,7 @@ body {
 .inputbox input {
     width: 100%;
     height: 100%;
-
     border: 2px solid #434343;
-    outline: none;
     font-size: 16px;
     color: black;
     padding: 20px 45px 20px 20px;
@@ -95,7 +89,6 @@ body {
 .inputbox input[type="date"] {
     width: 100%;
     height: 100%;
-
     border: 2px solid #434343;
     outline: none;
     font-size: 16px;

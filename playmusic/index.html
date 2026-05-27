@@ -10,17 +10,21 @@
 
     <header>
 
-        <span class="logotipo">PlayMusic</span>
+        <div>
 
-        <nav>
+            <span class="logotipo">PlayMusic</span>
 
-        <ul  class="navlinks">
+        </div>
 
-            <li><a href="#">Nova playlist</a></li>
-            <li><a href="./links_auxiliares/premium.html">Premium</a></li>
-            <li><a href="#">Configurações</a></li>
-            
-        </ul>
+        <nav class="navegacao">
+
+            <ul class="navlinks">
+
+                <li><a href="#">Nova playlist</a></li>
+                <li><a href="./links_auxiliares/premium.html">Premium</a></li>
+                <li><a href="#">Configurações</a></li>
+
+            </ul>
 
         </nav>
 
@@ -28,7 +32,21 @@
 
     </header>
 
-    <!-- criar barra de pesquisa -->
+    <section>
+
+        <div class="inputbox">
+
+            <h3>O que deseja ouvir hoje?</h3>
+
+            <form>
+
+                <input placeholder="Procure suas músicas..." type="text">
+
+            </form>
+
+        </div>
+
+    </section>
 
     <main>
 
@@ -57,7 +75,7 @@
                         <img src="./img/ironvex.png" alt="Capa">
                     </div>
 
-                    <h3>ironvex</h3>
+                    <h3>Ironvex</h3>
                     <span>Reinos em ruínas</span>
                     <button>Play</button>
 
@@ -148,6 +166,17 @@
         </nav>
 
     </footer>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
 </html>

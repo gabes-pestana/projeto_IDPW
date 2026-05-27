@@ -7,18 +7,16 @@
 @media (max-width: 600px) {
 
     header {
-        padding: 15px 20px;
-        flex-direction: column;
+        padding: 10px 20px;
+        height: 70px;
+        justify-content: space-between;
         gap: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
     }
 
     .logotipo {
-        font-size: 26px;
-    }
-
-    .topoPag {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 32px;
     }
 
     .containerLogin {
@@ -46,59 +44,15 @@
 
 }
 
-@media (max-width: 420px) {
-
-    header {
-        padding: 12px 18px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .logotipo {
-        font-size: 26px;
-    }
-
-    .topoPag {
-        font-size: 14px;
-    }
-
-    /* .containerLogin {
-        width: 90%;
-        padding: 16px 12px;
-    } */
-
-    /* .containerLogin h1 {
-        font-size: 28px;
-    } */
-
-    /* .inputbox {
-        height: 45px;
-    } */
-
-    /* .inputbox input {
-        font-size: 14px;
-    } */
-
-    /* .remember-forgot {
-        font-size: 13px;
-        flex-direction: row;
-        gap: 8px;
-    } */
-
-}
-
 header {
     position: relative;
     top: 0;
     left: 0;
-
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 20px 30px;
+    padding: 30px 30px;
     background-color: #202022
 }
 
@@ -108,7 +62,7 @@ header {
     font-weight: bold;
 }
 
-.topoPag a {
+header a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -117,7 +71,7 @@ header {
     color: black;
 }
 
-.topoPag a:hover {
+header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
@@ -139,7 +93,7 @@ body {
     color: white;
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    margin-top: 40px;
+    margin-top: 75px;
     background-color: #1b3763;
 }
 
@@ -157,10 +111,8 @@ body {
 
 .inputbox input{
     width: 100%;
-    height: 100%;        /*100% desses ocupa os 50px e da margin do .inputbox */
-
+    height: 100%;    
     border: 2px solid #434343;
-    outline: none;
     font-size: 16px;
     color: black;
     padding: 20px 45px 20px 20px;
@@ -176,8 +128,7 @@ body {
     height: 20px;
     font-size: 20px;
     top: 50%;
-    right: 20px;        /*apenas o top quebra o input i,precisa do right*/
-
+    right: 20px;      
     transform: translateY(-50%);
     color: black;
 }
@@ -213,7 +164,6 @@ body {
     font-size: 16px;
     color: #333;
     font-weight: 600;
-    /* box-shadow: 0 0 10px; rgba(0, 0, 0, .1); */
 }
 
 .login:hover {

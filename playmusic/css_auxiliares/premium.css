@@ -8,13 +8,10 @@ header {
     position: relative;
     top: 0;
     left: 0;
-
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 30px;
     background-color: #202022
 }
@@ -70,32 +67,32 @@ body {
 
 th,
 td {
-  vertical-align: middle;
-  text-align: center;
-  padding: 0.3em;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.3em;
 }
 
 tfoot {
-  border-top: 1px solid #999999;
+    border-top: 1px solid #999999;
 }
 
 table {
-  table-layout: fixed;
-  width: 90%;
-  margin: 10px auto;
-  border-collapse: collapse;
-  border-top: 1px solid #999999;
-  border-bottom: 1px solid #999999;
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #1c335a;
+    background-color: #1c335a;
 }
 
 caption {
-  padding: 1em;
-  caption-side: bottom;
-  letter-spacing: 1px;
+    padding: 1em;
+    caption-side: bottom;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -104,22 +101,13 @@ h2 {
 
 .cardsInfo {
     display: flex;
-    justify-content: space-between; /* nao estava escrito space beetwen */
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 10px;
     gap: 5px;
 }
 
 .card {
-    /* display: flex;
-    text-align: center;
-    flex-direction: column;
-    background-color: #ffffff23;
-    padding: 10px;
-    border-radius: 5px;
-    min-width: 250px;
-    min-height: 100px; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,10 +137,18 @@ h2 {
     color: white;
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px) {
+
+    .cardsInfo {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3px;
+        gap: 5px;
+    }
 
     .logotipo {
-        font-size: 22px;
+        font-size: 32px;
     }
 
     header {
@@ -172,4 +168,5 @@ h2 {
         display: table;
         width: 100%;
     }
+
 }
