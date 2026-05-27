@@ -137,10 +137,18 @@ h2 {
     color: white;
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px) {
+
+    .cardsInfo {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3px;
+        gap: 5px;
+    }
 
     .logotipo {
-        font-size: 22px;
+        font-size: 32px;
     }
 
     header {
@@ -159,17 +167,6 @@ h2 {
     table tbody {
         display: table;
         width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .cardsInfo {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 3px;
-        gap: 5px;
     }
 
 }

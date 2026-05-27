@@ -131,6 +131,15 @@ body {
 
 @media (max-width: 600px){
 
+    header {
+        height: 70px;
+    }
+
+    .topoPag {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
     .conteiner {
         max-width: 325px;
         margin-top: 27px;
