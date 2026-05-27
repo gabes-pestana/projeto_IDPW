@@ -67,32 +67,32 @@ body {
 
 th,
 td {
-  vertical-align: middle;
-  text-align: center;
-  padding: 0.3em;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.3em;
 }
 
 tfoot {
-  border-top: 1px solid #999999;
+    border-top: 1px solid #999999;
 }
 
 table {
-  table-layout: fixed;
-  width: 90%;
-  margin: 10px auto;
-  border-collapse: collapse;
-  border-top: 1px solid #999999;
-  border-bottom: 1px solid #999999;
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #1c335a;
+    background-color: #1c335a;
 }
 
 caption {
-  padding: 1em;
-  caption-side: bottom;
-  letter-spacing: 1px;
+    padding: 1em;
+    caption-side: bottom;
+    letter-spacing: 1px;
 }
 
 h2 {
