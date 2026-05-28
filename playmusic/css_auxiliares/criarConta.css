@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #507abe; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
 header {
     position: relative;
     top: 0;
@@ -23,7 +31,7 @@ header {
     font-weight: bold;
 }
 
-.topoPag a {
+header a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -32,18 +40,10 @@ header {
     color: black;
 }
 
-.topoPag a:hover {
+header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
-}
-
-body {
-    background-color: #507abe; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .conteiner {
@@ -129,13 +129,48 @@ body {
     transition: 0.5s;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202022;
+    margin-top: 40px;
+    padding: 20px;
+    flex: 1;
+}
+
+footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footerLinks li {
+    text-align: center;
+}
+
+.footerLinks li a:hover {
+    color: #4771b0;
+}
+
 @media (max-width: 600px){
 
     header {
         height: 70px;
-    }
-
-    .topoPag {
         font-size: 14px;
         padding: 8px 12px;
     }
@@ -143,6 +178,12 @@ body {
     .conteiner {
         max-width: 325px;
         margin-top: 27px;
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

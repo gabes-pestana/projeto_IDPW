@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
 header {
     position: relative;
     top: 0;
@@ -22,7 +30,7 @@ header {
     font-weight: bold;
 }
 
-.topoPag a {
+header a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -31,18 +39,10 @@ header {
     color: black;
 }
 
-.topoPag a:hover {
+header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #507abe;
 }
 
 .container {
@@ -98,4 +98,64 @@ body {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202022;
+    margin-top: auto;
+    padding: 20px;
+}
+
+footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footerLinks li {
+    text-align: center;
+}
+
+.footerLinks li a:hover {
+    color: #4771b0;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px 20px;
+        height: 70px;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .logotipo {
+        font-size: 32px;
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
