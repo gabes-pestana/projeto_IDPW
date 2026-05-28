@@ -237,7 +237,9 @@ footer {
     }
 
     .footerLinks {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .botaoLogin {
@@ -277,10 +279,6 @@ footer {
 
     .navlinks li {
         padding: 0 8px;
-    }
-
-    .footerLinks {
-        grid-template-columns: 1fr;
     }
 
 }
