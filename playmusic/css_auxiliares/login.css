@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 header {
     position: relative;
     top: 0;
@@ -35,14 +46,6 @@ header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #507abe;
 }
 
 .containerLogin {
@@ -160,6 +163,11 @@ footer {
 
 footer a {
     font-size: 18px;
+<<<<<<< HEAD
+=======
+    color: #fff;
+    text-decoration: none;
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 }
 
 .footerLinks {
@@ -183,6 +191,7 @@ footer a {
     color: #4771b0;
 }
 
+<<<<<<< HEAD
 footer a {
     color: white;
     text-decoration: none;
@@ -194,6 +203,17 @@ footer a {
         padding: 12px 18px;
         gap: 10px;
         height: 70px;
+=======
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px 20px;
+        height: 70px;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
     }
 
     .logotipo {
@@ -223,8 +243,20 @@ footer a {
         gap: 8px;
     }
 
+<<<<<<< HEAD
     .footerLinks {
         grid-template-columns: 1fr;
+=======
+    /* .conteiner {
+        max-width: 325px;
+        margin-top: 27px;
+    } */
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
     }
 
 }

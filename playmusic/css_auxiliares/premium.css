@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+
 header {
     position: relative;
     top: 0;
@@ -22,7 +31,7 @@ header {
     font-weight: bold;
 }
 
-.topoPag a {
+header a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -31,18 +40,10 @@ header {
     color: black;
 }
 
-.topoPag a:hover {
+header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #507abe;
 }
 
 .container {
@@ -147,6 +148,15 @@ footer {
     padding: 20px;
 }
 
+<<<<<<< HEAD
+=======
+footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 .footerLinks {
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
@@ -168,31 +178,26 @@ footer {
     color: #4771b0;
 }
 
+<<<<<<< HEAD
 footer a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
+=======
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 @media (max-width: 600px) {
-
-    .cardsInfo {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 3px;
-        gap: 5px;
-    }
-
-    .logotipo {
-        font-size: 32px;
-    }
 
     header {
         width: 100%;
         gap: 15px;
         padding: 15px;
         font-size: 20px;
+    }
+
+    .logotipo {
+        font-size: 32px;
     }
 
     table {
@@ -206,8 +211,26 @@ footer a {
         width: 100%;
     }
 
+<<<<<<< HEAD
     .footerLinks {
         grid-template-columns: 1fr;
     }
 
+=======
+    .cardsInfo {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3px;
+        gap: 5px;
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 }

@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #507abe; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
 header {
     position: relative;
     top: 0;
@@ -39,14 +47,6 @@ header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
-}
-
-body {
-    background-color: #507abe; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
 }
 
 .container {
@@ -135,6 +135,15 @@ footer {
     padding: 20px;
 }
 
+<<<<<<< HEAD
+=======
+footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 .footerLinks {
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
@@ -156,6 +165,7 @@ footer {
     color: #4771b0;
 }
 
+<<<<<<< HEAD
 footer a {
     color: white;
     text-decoration: none;
@@ -168,12 +178,24 @@ footer a {
         padding: 12px 18px;
         gap: 10px;
         height: 70px;
+=======
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px 20px;
+        height: 70px;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
     }
 
     .logotipo {
         font-size: 32px;
     }
 
+<<<<<<< HEAD
     .container {
         padding: 20px 15px;
     }
@@ -183,3 +205,17 @@ footer a {
     }
 }
 
+=======
+    /* .conteiner {
+        width: 95%;
+        padding: 25px 20px;
+    } */
+
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+>>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
