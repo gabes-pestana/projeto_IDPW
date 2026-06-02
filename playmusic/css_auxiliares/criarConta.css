@@ -9,7 +9,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +22,7 @@ header {
     font-weight: bold;
 }
 
-.topoPag a {
+header a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -32,7 +31,7 @@ header {
     color: black;
 }
 
-.topoPag a:hover {
+header a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
@@ -129,13 +128,50 @@ body {
     transition: 0.5s;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202022;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footerLinks li {
+    text-align: center;
+}
+
+.footerLinks li a:hover {
+    color: #4771b0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 @media (max-width: 600px){
 
     header {
         height: 70px;
     }
 
-    .topoPag {
+    header {
         font-size: 14px;
         padding: 8px 12px;
     }
@@ -143,6 +179,14 @@ body {
     .conteiner {
         max-width: 325px;
         margin-top: 27px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    .footerLinks {
+        grid-template-columns: 1fr;
     }
 
 }
