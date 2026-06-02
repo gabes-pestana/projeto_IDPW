@@ -148,15 +148,6 @@ footer {
     padding: 20px;
 }
 
-<<<<<<< HEAD
-=======
-footer a {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-}
-
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 .footerLinks {
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
@@ -178,15 +169,12 @@ footer a {
     color: #4771b0;
 }
 
-<<<<<<< HEAD
 footer a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-=======
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 @media (max-width: 600px) {
 
     header {
@@ -211,26 +199,8 @@ footer a {
         width: 100%;
     }
 
-<<<<<<< HEAD
     .footerLinks {
         grid-template-columns: 1fr;
     }
 
-=======
-    .cardsInfo {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 3px;
-        gap: 5px;
-    }
-
-    .footerLinks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 }

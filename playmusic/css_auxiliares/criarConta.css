@@ -134,20 +134,8 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #202022;
-<<<<<<< HEAD
     margin-top: auto;
     padding: 20px;
-=======
-    margin-top: 40px;
-    padding: 20px;
-    flex: 1;
-}
-
-footer a {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 }
 
 .footerLinks {
@@ -171,25 +159,19 @@ footer a {
     color: #4771b0;
 }
 
-<<<<<<< HEAD
 footer a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-=======
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
 @media (max-width: 600px){
 
     header {
         height: 70px;
-<<<<<<< HEAD
     }
 
     header {
-=======
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
         font-size: 14px;
         padding: 8px 12px;
     }
@@ -199,19 +181,12 @@ footer a {
         margin-top: 27px;
     }
 
-<<<<<<< HEAD
     footer {
         margin-top: 20px;
     }
 
     .footerLinks {
         grid-template-columns: 1fr;
-=======
-    .footerLinks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
->>>>>>> 5edc07bbab1fb754e57624d5c24485fde80fcaba
     }
 
 }
