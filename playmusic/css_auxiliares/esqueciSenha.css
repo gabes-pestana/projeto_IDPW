@@ -86,7 +86,7 @@ header a:hover {
     border-radius: 40px;
 }
 
-.inputbox input:placeholder {
+.inputbox input::placeholder {
     color: #434343;
 }
 
