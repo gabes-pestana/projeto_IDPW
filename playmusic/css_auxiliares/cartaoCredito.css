@@ -92,6 +92,7 @@ main form h1 {
 
 .inputbox input::placeholder {
     color: #434343;
+    font-weight: bold;
 }
 
 .inputbox input[type="date"] {
@@ -156,11 +157,17 @@ footer {
     color: #4771b0;
 }
 
-footer a {
+li, a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* footer a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-}
+} */
 
 @media (max-width: 600px) {
 
@@ -176,6 +183,12 @@ footer a {
 
     .container {
         padding: 20px 15px;
+    }
+
+    a {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
     }
 
     .footerLinks {

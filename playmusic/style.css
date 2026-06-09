@@ -263,23 +263,12 @@ footer {
         align-items: center;
     }
 
-}
-
-@media (max-width: 400px) {
-
-    .navlinks li {
-        padding: 0 8px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 60%;
-        min-height: auto;
+    a {
+        font-size: 15px;
+        color: #fff;
+        text-decoration: none;
     }
 
 }
+
 

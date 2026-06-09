@@ -54,7 +54,7 @@ header a:hover {
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     background-color: #1b3763;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .conteiner h1 {
@@ -84,6 +84,7 @@ header a:hover {
 
 .inputbox input::placeholder {
     color: #434343;
+    font-weight: bold;
 }
 
 .inputbox input[type="date"] {
@@ -94,7 +95,7 @@ header a:hover {
     outline: none;
     font-size: 16px;
     color: black;
-    padding: 20px 45px 20px 20px;
+    padding: 14px 45px 20px 20px;
     border-radius: 40px;
 }
 
@@ -159,11 +160,17 @@ footer {
     color: #4771b0;
 }
 
-footer a {
+li, a, button {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* footer a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-}
+} */
 
 @media (max-width: 600px){
 
@@ -183,6 +190,12 @@ footer a {
 
     footer {
         margin-top: 20px;
+    }
+
+    a {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
     }
 
     .footerLinks {
