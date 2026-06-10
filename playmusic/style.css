@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 
-body {
+.homePage {
     display: flex;
     flex-direction: column;
     background-color:#1b3763 ;
@@ -15,7 +15,7 @@ body {
     min-height:100vh;
 }
 
-header {
+.homePageHeader {
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ header {
     background-color: #202022;
 }
 
-.logotipo {
+.logo {
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: bold;
@@ -40,6 +40,7 @@ section {
 }
 
 section h3 {
+    margin-top: 20px;
     color: white;
     font-size: 25px;
 }
@@ -95,8 +96,8 @@ li, a, button {
     margin: 0 auto;
 }
 
-.inputbox input {
-    width: 58%;
+.inputboxIndex input {
+    width: 65%;
     border: 2px solid #434343;
     font-size: 16px;
     color: black;
@@ -105,7 +106,7 @@ li, a, button {
     margin: 10px;
 }
 
-.inputbox input::placeholder {
+.inputboxIndex input::placeholder {
     color: #434343;
 }
 
@@ -122,6 +123,7 @@ li, a, button {
     padding: 2rem;
     border-radius: 8px;
     margin: 1rem;
+    margin-top: 50px;
 }
 
 .cardContent {
@@ -131,7 +133,7 @@ li, a, button {
     align-items: center;
 }
 
-button {
+.play {
     padding: 10px 20px;
     background-color: #4771b0;
     border: none;
@@ -139,7 +141,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.play:hover {
     background-color: #39619c;
 }
 
@@ -163,7 +165,67 @@ span {
     margin-bottom: 16px;
 }
 
-footer {
+/* .audioBar {
+    position: fixed;
+    /* bottom: 0;
+    left: 0; */
+
+    /* z-index: 1000;
+
+    width: 700px;
+    height: 90px;
+    margin: 20px auto;
+    border: 0.5px solid #0f284d;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f304a;
+}  */
+
+.audioBar {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 700px;
+    height: 140px;
+
+    z-index: 1000;
+
+    border: 0.5px solid #0f284d;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1f304a;
+    margin-bottom: 55px;
+}
+
+/* .audioBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    z-index: 1000;
+} */
+
+.audioBar audio {
+    width: 80%;
+}
+
+.footerIndex {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -171,11 +233,13 @@ footer {
     background-color: #202022;
     margin-top: auto;
     padding: 20px;
+    margin-top: 170px;
+    z-index: 1100;
 }
 
 .footerLinks {
     display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
     gap: 15px;
     justify-content: center;
     align-items: center;
@@ -194,15 +258,884 @@ footer {
     color: #4771b0;
 }
 
+/* other footers */
+
+.otherFooters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202022;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.otherFooterLinks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.otherFooterLinks li {
+    text-align: center;
+}
+
+.otherFooterLinks li a:hover {
+    color: #4771b0;
+}
+
+/* end other footer links */
+
+/* login */
+
+.loginHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+.home {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+.containerLogin {
+    max-width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin-top: 75px;
+    background-color: #1b3763;
+}
+
+.containerLogin h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.inputboxLogin {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputboxLogin input{
+    width: 100%;
+    height: 100%;    
+    border: 2px solid #434343;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.inputboxLogin input::placeholder {
+    color: #434343;
+    font-weight: bold;
+}
+
+.inputboxLogin i{
+    position: absolute;
+    height: 20px;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;      
+    transform: translateY(-50%);
+    color: black;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color:white;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
+}
+
+.registerLink {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
+
+.registerLink a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.registerLink a:hover {
+    text-decoration: underline;
+}
+
+/* passwordPage */
+
+.passwordPageBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+.passwordPageHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.botaoLogin {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.botaoLogin:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+.conteinerPassword {
+    max-width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin-top: 100px;
+    background-color: #1b3763;
+}
+
+.conteinerPassword h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.conteinerPassword p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.inputboxPassword {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputboxPassword input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.inputboxPassword input::placeholder {
+    color: #434343;
+    font-weight: bold;
+}
+
+.send {
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.send:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
+}
+
+/* create acount page */
+
+.acountHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+} 
+
+.acountHeader a {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.acountHeader a:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+.createAcount {
+    background-color: #507abe; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteinerAcount {
+    max-width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 30px 60px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: #1b3763;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conteinerAcount h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+    text-align: center;
+}
+
+.inputboxAcount {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputboxAcount input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.inputboxAcount input::placeholder {
+    color: #434343;
+    font-weight: bold;
+}
+
+.inputboxAcount input[type="date"] {
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #434343;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 14px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.terms {
+    display: flex;
+    margin-right: 5px;
+}
+
+.terms label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.cleanAll {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 25px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #434343;
+    font-weight: 600;  
+}
+
+.cleanAll:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
+}
+
+.makeAcount {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 25px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #434343;
+    font-weight: 600;
+}
+
+.makeAcount:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
+}
+
+/* premium page */
+
+.premiumBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+.premiumHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.premiumHeader a {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.premiumHeader a:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+.containerPremium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 90%;
+    background-color: #1b3763;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 45px;
+    background-color: #1b3763;
+}
+
+.containerPremium h1 {
+    text-align: center;
+}
+
+th,
+td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.3em;
+}
+
+tfoot {
+    border-top: 1px solid #999999;
+}
+
+table {
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1c335a;
+}
+
+caption {
+    padding: 1em;
+    caption-side: bottom;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardsInfoPremium {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardsPremium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff23;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-height: 100px;
+}
+
+.cardsPremium a {
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;  
+    color: black;
+    cursor: pointer;
+}
+
+.cardsPremium a:hover{
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+/* shop page */
+
+.buyBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507abe;
+}
+
+.buyHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.buyHeader a {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.buyHeader a:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+main h1 {
+    text-align: center;
+} 
+
+.containerBuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 80%;
+    background-color: #1b3763;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 40px 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 40px;
+    background-color: #1b3763;
+}
+
+.cardsInfoShop {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cardsShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff23;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-height: 150px;
+}
+
+.cardsShop a {
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;  
+    color: black;
+    cursor: pointer;
+}
+
+.cardsShop a:hover{
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+/* credit card page */
+
+.creditCardBody {
+    background-color: #507abe; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.creditCardHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.creditCardHeader a {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.creditCardHeader a:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+main form h1 {
+    text-align: center;
+}
+
+.containerCreditCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 80%;
+    background-color: #1b3763;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 40px;
+    background-color: #1b3763;
+}
+
+.containerCreditCard h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+    text-align: center;
+}
+
+.inputboxCreditCard {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputboxCreditCard input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.inputboxCreditCard input::placeholder {
+    color: #434343;
+    font-weight: bold;
+}
+
+.inputboxCreditCard input[type="date"] {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.finish {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 25px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #434343;
+    font-weight: 600;
+}
+
+.finish:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
+}
+
+/* pix page */
+
+.pixBody {
+    background-color: #507abe; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pixHeader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #202022
+}
+
+.pixHeader a {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.pixHeader a:hover {
+    background-color: rgb(36, 82, 156);
+    transition: 0.5s;
+    color: white;
+}
+
+
+main h1 {
+    text-align: center;
+}
+
+.containerPix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 80%;
+    background-color: #1b3763;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 20px 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 40px;
+    background-color: #1b3763;
+    line-height: 2.0;
+}
+
+.containerPix h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+    text-align: center;
+}
+
+.qrcode {
+    height: 256px;
+    width: 256px;
+    margin-top: 10px;
+}
+
+.infoPix h2 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.infoPix p {
+    text-align: left;
+}
+
+/* @media */
+
 @media (max-width: 600px) {
 
-    header {
+    .homePageHeader {
         flex-wrap: wrap;
         align-items: center;
     }
 
-    .logotipo {
-        order: 1;
+    .loginHeader {
+        padding: 12px 18px;
+        gap: 10px;
+        height: 70px;
+    }
+
+    .passwordPageHeader {
+        padding: 12px 18px;
+        gap: 10px;
+        height: 70px;
+    }
+
+    .acountHeader {
+        font-size: 14px;
+        padding: 8px 12px;
+        height: 70px;
+    }
+
+    .conteinerAcount {
+        max-width: 325px;
+        margin-top: 27px;
+    }
+
+    .containerCreditCard {
+        padding: 20px 15px;
     }
 
     .navlinks {
@@ -250,11 +1183,93 @@ footer {
     .container {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 320px;
+    }
+
+    .conteinerPassword {
+        max-width: 325px;
+        margin-top: 70px;
     }
 
     .card {
         max-width: 60%;
         min-height: auto;
+    }
+
+    .containerLogin {
+        width: 95%;
+        padding: 25px 20px;
+    }
+
+    .containerLogin h1 {
+        font-size: 30px;
+    }
+
+    .inputboxLogin {
+        height: 45px;
+    }
+
+    .inputboxLogin input {
+        font-size: 14px;
+    }
+
+    .remember-forgot {
+        font-size: 13px;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .premiumHeader {
+        width: 100%;
+        gap: 15px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table tbody {
+        display: table;
+        width: 100%;
+    }
+
+    .pixHeader {
+        padding: 12px 18px;
+        gap: 10px;
+        height: 70px;
+    }
+
+    .containerPix {
+        padding: 20px 35px;
+    }
+
+    .audioBar {
+        bottom: 20px;
+        left: 50%;
+
+        width: 300px;
+
+        z-index: 900;
+        margin-bottom: 160px;
+        
+    }
+
+    .footerIndex {
+        margin-top: 150px;
+        z-index: 1000;
+        position: fixed; /* talvz tirar isso */
+        bottom: 0;
+        margin-bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footerLinks {
+        grid-template-columns: 1fr;
     }
 
     .footerLinks {
@@ -269,6 +1284,12 @@ footer {
         text-decoration: none;
     }
 
+    /* otherFooter @media */
+
+
+
+    .otherFooterLinks {
+        grid-template-columns: repeat(1, minmax(120px, 1fr));
+    }
+
 }
-
-

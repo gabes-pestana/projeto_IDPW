@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
+.creditCardBody {
+    background-color: #507abe; 
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #507abe;
 }
 
-header {
+.creditCardHeader {
     position: relative;
     top: 0;
     left: 0;
@@ -24,13 +24,13 @@ header {
     background-color: #202022
 }
 
-.logotipo {
+/* .logotipo {
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: bold;
-}
+} */
 
-header a {
+.creditCardHeader a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -39,39 +39,50 @@ header a {
     color: black;
 }
 
-header a:hover {
+.creditCardHeader a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
 }
 
-.containerLogin {
-    max-width: 420px;
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 10px;
-    color: white;
-    padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    margin-top: 75px;
-    background-color: #1b3763;
-}
-
-.containerLogin h1{
-    font-size: 40px;
+main form h1 {
     text-align: center;
 }
 
-.inputbox {
+.containerCreditCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 80%;
+    background-color: #1b3763;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 40px;
+    background-color: #1b3763;
+}
+
+.containerCreditCard h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+    text-align: center;
+}
+
+.inputboxCreditCard {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.inputbox input{
+.inputboxCreditCard input {
     width: 100%;
-    height: 100%;    
+    height: 100%;
     border: 2px solid #434343;
     font-size: 16px;
     color: black;
@@ -79,77 +90,43 @@ header a:hover {
     border-radius: 40px;
 }
 
-.inputbox input::placeholder {
+.inputboxCreditCard input::placeholder {
     color: #434343;
     font-weight: bold;
 }
 
-.inputbox i{
-    position: absolute;
-    height: 20px;
-    font-size: 20px;
-    top: 50%;
-    right: 20px;      
-    transform: translateY(-50%);
-    color: black;
-}
-
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-    margin: -15px 0 15px;
-}
-
-.remember-forgot label input {
-    accent-color:white;
-    margin-right: 5px;
-}
-
-.remember-forgot a {
-    text-decoration: none;
-    color: white;
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-.login {
-    margin-top: 20px;
+.inputboxCreditCard input[type="date"] {
     width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.finish {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 25px;
     height: 35px;
     background-color: white;
     border: none;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #434343;
     font-weight: 600;
 }
 
-.login:hover {
+.finish:hover {
     background-color: rgb(36, 82, 156);
     color: white;
     transition: 0.5s;
 }
 
-.registerLink {
-    font-size: 14px;
-    text-align: center;
-    margin: 20px;
-}
-
-.registerLink a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-}
-
-.registerLink a:hover {
-    text-decoration: underline;
-}
-
-footer {
+/* footer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -158,16 +135,6 @@ footer {
     margin-top: auto;
     padding: 20px;
 }
-
-li, a, button {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* footer a {
-    font-size: 18px;
-} */
 
 .footerLinks {
     display: grid;
@@ -190,10 +157,17 @@ li, a, button {
     color: #4771b0;
 }
 
-footer a {
+li, a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+} */
+
+/* footer a {
     color: white;
     text-decoration: none;
-}
+    font-size: 18px;
+} */
 
 @media (max-width: 600px) {
 
@@ -207,31 +181,8 @@ footer a {
         font-size: 32px;
     }
 
-    .containerLogin {
-        width: 95%;
-        padding: 25px 20px;
-    }
-
-    .containerLogin h1 {
-        font-size: 30px;
-    }
-
-    .inputbox {
-        height: 45px;
-    }
-
-    .inputbox input {
-        font-size: 14px;
-    }
-
-    .remember-forgot {
-        font-size: 13px;
-        flex-direction: row;
-        gap: 8px;
-    }
-
-    .footerLinks {
-        grid-template-columns: 1fr;
+    .containerCreditCard {
+        padding: 20px 15px;
     }
 
     a {
@@ -240,4 +191,8 @@ footer a {
         text-decoration: none;
     }
 
+    .footerLinks {
+        grid-template-columns: 1fr;
+    }
 }
+

@@ -4,60 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><link rel="stylesheet" href="../css_auxiliares/cartaoCredito.css">
+    <title>Document</title><link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="creditCardBody">
 
-    <header>
+    <header class="creditCardHeader">
 
-        <span class="logotipo">PlayMusic</span>
+        <span class="logo">PlayMusic</span>
 
         <a href="../index.html" class="home">Home</a>
 
     </header>
 
-    <main class="container">
+    <main class="containerCreditCard">
 
         <form>
 
             <h1>Dados para pagamento</h1>
 
-            <div class="inputbox">
+            <div class="inputboxCreditCard">
 
                 <input placeholder="Nome do titular" type="text">
 
             </div>
 
-            <div class="inputbox">
+            <div class="inputboxCreditCard">
 
                 <input placeholder="Número do Cartão" type="number">
 
             </div>
 
-            <div class="inputbox">
+            <div class="inputboxCreditCard">
 
                 <input placeholder="Código de segurança" type="number">
 
             </div>
 
-            <div class="inputbox">
+            <div class="inputboxCreditCard">
 
                 <input placeholder="Data de validade" type="number">
 
             </div>
 
-            <button type="submit" class="finalizarCompra">Finalizar pagamento</button>
+            <button type="reset" class="cleanAll">Limpar</button>
+            <button type="submit" class="finish">Finalizar pagamento</button>
 
         </form>
 
     </main>
 
-    <footer>
+    <footer class="otherFooters">
 
         <nav>
 
-            <ul  class="footerLinks">
+            <ul  class="otherFooterLinks">
 
                 <li><a href="#">Contato SAC</a></li>
                 <li><a href="#">Envie sugestões</a></li>

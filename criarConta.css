@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
+.createAcount {
+    background-color: #507abe; 
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #507abe;
 }
 
-header {
+.acountHeader {
     position: relative;
     top: 0;
     left: 0;
@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 20px 30px;
     background-color: #202022
-}
+} 
 
 .logotipo {
     color: rgb(255, 255, 255);
@@ -30,7 +30,7 @@ header {
     font-weight: bold;
 }
 
-header a {
+.acountHeader a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -39,102 +39,94 @@ header a {
     color: black;
 }
 
-header a:hover {
+.acountHeader a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    max-width: 90%;
-    background-color: #1b3763;
+.conteinerAcount {
+    max-width: 420px;
+    background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
     color: white;
-    padding: 20px 20px;
+    padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    margin: 45px;
     background-color: #1b3763;
+    margin-top: 60px;
 }
 
-.container h1 {
+.conteinerAcount h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
     text-align: center;
 }
 
-th,
-td {
-    vertical-align: middle;
-    text-align: center;
-    padding: 0.3em;
+.inputboxAcount {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
 }
 
-tfoot {
-    border-top: 1px solid #999999;
-}
-
-table {
-    table-layout: fixed;
-    width: 90%;
-    margin: 10px auto;
-    border-collapse: collapse;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #1c335a;
-}
-
-caption {
-    padding: 1em;
-    caption-side: bottom;
-    letter-spacing: 1px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.cardsInfo {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #ffffff23;
-    padding: 10px;
-    border-radius: 5px;
-    flex: 1 1 250px;
-    max-width: 300px;
-    min-height: 100px;
-}
-
-.card a {
-    background-color: white;
-    margin-top: 10px;
-    padding: 5px 8px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;  
+.inputboxAcount input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    font-size: 16px;
     color: black;
-    cursor: pointer;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
 }
 
-.card a:hover{
+.inputboxAcount input::placeholder {
+    color: #434343;
+    font-weight: bold;
+}
+
+.inputboxAcount input[type="date"] {
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #434343;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 14px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.terms {
+    display: flex;
+    margin-right: 5px;
+}
+
+.terms label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.makeAcount {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 25px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #434343;
+    font-weight: 600;
+}
+
+.makeAcount:hover {
     background-color: rgb(36, 82, 156);
-    transition: 0.5s;
     color: white;
+    transition: 0.5s;
 }
 
 footer {
@@ -174,44 +166,37 @@ li, a, button {
     text-decoration: none;
 }
 
-/* footer a {
+footer a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-} */
+} 
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
 
-    header {
-        width: 100%;
-        gap: 15px;
-        padding: 15px;
-        font-size: 20px;
+    .acountHeader {
+        font-size: 14px;
+        padding: 8px 12px;
+        height: 70px;
     }
 
-    .logotipo {
-        font-size: 32px;
+    .conteinerAcount {
+        max-width: 325px;
+        margin-top: 27px;
     }
 
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
+    /* footer {
+        margin-top: 20px;
+    } */
 
-    table tbody {
-        display: table;
-        width: 100%;
-    }
-
-    .footerLinks {
-        grid-template-columns: 1fr;
-    }
-
-    a {
+    /* a {
         font-size: 16px;
         color: #fff;
         text-decoration: none;
     }
+
+    .footerLinks {
+        grid-template-columns: 1fr;
+    } */
 
 }

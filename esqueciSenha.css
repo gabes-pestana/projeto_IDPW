@@ -1,22 +1,23 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-body {
-    background-color: #507abe; 
+.passwordPageBody {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    background-color: #507abe;
 }
 
-header {
+.passwordPageHeader {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,13 +25,13 @@ header {
     background-color: #202022
 }
 
-.logotipo {
+/* .logotipo {
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: bold;
-}
+} */
 
-header a {
+.botaoLogin {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -39,55 +40,74 @@ header a {
     color: black;
 }
 
-header a:hover {
+.botaoLogin:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
 }
 
-
-main h1 {
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    max-width: 80%;
-    background-color: #1b3763;
+.conteinerPassword {
+    max-width: 420px;
+    background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
     color: white;
-    padding: 20px 80px;
+    padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    margin: 40px;
+    margin-top: 100px;
     background-color: #1b3763;
-    line-height: 2.0;
 }
 
-.conteiner h1 {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0; 
+.conteinerPassword h1 {
+    font-size: 40px;
     text-align: center;
 }
 
-.qrcode {
-    height: 256px;
-    width: 256px;
-    margin-top: 10px;
-}
-
-.info h2 {
-    text-align: left;
+.conteinerPassword p {
     font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
-.info p {
-    text-align: left;
+.inputboxPassword {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputboxPassword input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #434343;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+}
+
+.inputboxPassword input::placeholder {
+    color: #434343;
+    font-weight: bold;
+}
+
+.send {
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.send:hover {
+    background-color: rgb(36, 82, 156);
+    color: white;
+    transition: 0.5s;
 }
 
 footer {
@@ -133,24 +153,21 @@ li, a, button {
     font-size: 18px;
 } */
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
 
-    header {
-        padding: 12px 18px;
-        gap: 10px;
-        height: 70px;
+    .conteiner {
+        max-width: 325px;
+        margin-top: 70px;
     }
 
     .logotipo {
         font-size: 32px;
     }
 
-    .container {
-        padding: 20px 35px;
-    }
-
-    .footerLinks {
-        grid-template-columns: 1fr;
+    header {
+        padding: 12px 18px;
+        gap: 10px;
+        height: 70px;
     }
 
     a {
@@ -159,4 +176,7 @@ li, a, button {
         text-decoration: none;
     }
 
+    .footerLinks {
+        grid-template-columns: 1fr;
+    }
 }

@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
+.pixBody {
+    background-color: #507abe; 
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #507abe;
 }
 
-header {
+.pixHeader {
     position: relative;
     top: 0;
     left: 0;
@@ -24,13 +24,13 @@ header {
     background-color: #202022
 }
 
-.logotipo {
+/* .logotipo {
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: bold;
-}
+} */
 
-header a {
+.pixHeader a {
     background-color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -39,17 +39,18 @@ header a {
     color: black;
 }
 
-header a:hover {
+.pixHeader a:hover {
     background-color: rgb(36, 82, 156);
     transition: 0.5s;
     color: white;
 }
 
+
 main h1 {
     text-align: center;
-} 
+}
 
-.container {
+.containerPix {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,52 +60,37 @@ main h1 {
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
     color: white;
-    padding: 40px 60px;
+    padding: 20px 80px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     margin: 40px;
     background-color: #1b3763;
+    line-height: 2.0;
 }
 
-.cardsInfo {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.containerPix h1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
     text-align: center;
-    background-color: #ffffff23;
-    padding: 10px;
-    border-radius: 5px;
-    flex: 1 1 250px;
-    max-width: 300px;
-    min-height: 150px;
 }
 
-.card a {
-    background-color: white;
+.qrcode {
+    height: 256px;
+    width: 256px;
     margin-top: 10px;
-    padding: 5px 8px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;  
-    color: black;
-    cursor: pointer;
 }
 
-.card a:hover{
-    background-color: rgb(36, 82, 156);
-    transition: 0.5s;
-    color: white;
+.infoPix h2 {
+    text-align: left;
+    font-size: 20px;
 }
 
-footer {
+.infoPix p {
+    text-align: left;
+}
+
+/* footer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -139,7 +125,7 @@ li, a, button {
     font-size: 18px;
     color: #fff;
     text-decoration: none;
-}
+} */
 
 /* footer a {
     color: white;
@@ -149,17 +135,21 @@ li, a, button {
 
 @media (max-width: 600px) {
 
-    header {
+    .pixHeader {
         padding: 12px 18px;
         gap: 10px;
         height: 70px;
     }
 
-    .logotipo {
+    /* .logotipo {
         font-size: 32px;
+    } */
+
+    .containerPix {
+        padding: 20px 35px;
     }
 
-    .footerLinks {
+    /* .footerLinks {
         grid-template-columns: 1fr;
     }
 
@@ -167,6 +157,6 @@ li, a, button {
         font-size: 16px;
         color: #fff;
         text-decoration: none;
-    }
+    } */
 
 }
