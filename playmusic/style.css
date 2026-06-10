@@ -405,19 +405,6 @@ span {
     background-color: #507abe;
 }
 
-.passwordPageHeader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #202022
-}
-
 .loginButton {
     background-color: white;
     padding: 10px 10px;
@@ -499,34 +486,7 @@ span {
 
 /* create acount page */
 
-.acountHeader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #202022
-} 
-
-.acountHeader a {
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-.acountHeader a:hover {
-    background-color: rgb(36, 82, 156);
-    transition: 0.5s;
-    color: white;
-}
-
-.createAcount {
+.createAcountBody {
     background-color: #507abe; 
     display: flex;
     flex-direction: column;
@@ -649,33 +609,6 @@ span {
     background-color: #507abe;
 }
 
-.premiumHeader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #202022
-}
-
-.premiumHeader a {
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-.premiumHeader a:hover {
-    background-color: rgb(36, 82, 156);
-    transition: 0.5s;
-    color: white;
-}
-
 .containerPremium {
     display: flex;
     flex-direction: column;
@@ -777,33 +710,6 @@ h2 {
     background-color: #507abe;
 }
 
-.buyHeader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #202022
-}
-
-.buyHeader a {
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-.buyHeader a:hover {
-    background-color: rgb(36, 82, 156);
-    transition: 0.5s;
-    color: white;
-}
-
 main h1 {
     text-align: center;
 } 
@@ -871,33 +777,6 @@ main h1 {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-}
-
-.creditCardHeader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #202022
-}
-
-.creditCardHeader a {
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-.creditCardHeader a:hover {
-    background-color: rgb(36, 82, 156);
-    transition: 0.5s;
-    color: white;
 }
 
 main form h1 {
@@ -990,34 +869,6 @@ main form h1 {
     align-items: center;
     min-height: 100vh;
 }
-
-.pixHeader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #202022
-}
-
-.pixHeader a {
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-.pixHeader a:hover {
-    background-color: rgb(36, 82, 156);
-    transition: 0.5s;
-    color: white;
-}
-
 
 main h1 {
     text-align: center;
