@@ -48,9 +48,8 @@ section {
 }
 
 section h3 {
-    margin-top: 20px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navigation {
@@ -105,18 +104,40 @@ li, a, button {
     padding-bottom: 30px;
 }
 
+.inputboxIndex form {
+    position: relative;
+    width: min(1000px, 90%);
+    margin: 0 auto;
+}
+
 .inputboxIndex input {
-    width: 66%;
+    width: 100%;
     border: 2px solid #434343;
-    font-size: 16px;
-    color: black;
-    padding: 20px 45px 20px 20px;
     border-radius: 30px;
-    margin: 10px;
+    padding: 20px 80px 20px 20px;
+    margin: 10px 0;
+}
+
+.inputboxIndex i{
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgb(180, 180, 180);
 }
 
 .inputboxIndex input::placeholder {
-    color: #434343;
+    color: #747474;
+    font-weight: bold;
 }
 
 .card {
@@ -180,7 +201,7 @@ span {
     flex-direction: column;
     margin: 20px auto;
     bottom: 10px;
-    width: min(1100px, 90%);
+    width: min(1000px, 90%);
     height: 140px;
     z-index: 1000;
     border: 0.5px solid #0f284d;
@@ -194,22 +215,42 @@ span {
     width: 80%;
 }
 
+.audioOptions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.audioOptions li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4771b0;
+    border-radius: 60px;
+    width: 70px;
+    height: 40px;
+    font-size: 30px;
+}
+
 .musicName {
     margin-bottom: -27px;
 }
 
 .top {
-    background-color: #39619c;
-    max-width: 70px;
-    border-radius: 40px;
+    background-color: #1f304a;
+    max-width: 65px;
+    border-radius: 35px;
     text-align: center;
     margin-left: 15px;
     margin-bottom: 15px;
-    border: 0.5px solid rgb(170, 170, 170);
+    border: 0.5px solid #0f284d;
 }
 
 .top a {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 footer i{
