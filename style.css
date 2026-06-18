@@ -264,12 +264,11 @@ footer i:hover {
 footer {
     width: 100%;
     display: flex;
+    position: relative;
     justify-content: center;
-    align-items: center;
     background-color: #202022;
     margin-top: auto;
     padding: 20px;
-    z-index: 1100;
 }
 
 .footerLinks {
@@ -958,7 +957,7 @@ main h1 {
     }
 
     .conteinerAcount {
-        max-width: 380px;
+        max-width: 350px;
         margin-top: 27px;
     }
 
@@ -1014,7 +1013,7 @@ main h1 {
     }
 
     .conteinerPassword {
-        max-width: 300px;
+        max-width: 350px;
         margin-top: 70px;
         margin-bottom: 70px;
     }
@@ -1105,9 +1104,5 @@ main h1 {
 
     .top a {
         font-size: 30px;
-    }
-
-    .conteinerPassword {
-        max-width: 380px;
     }
 }
