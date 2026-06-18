@@ -210,7 +210,7 @@ span {
 
 .audioOptions {
     display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
     justify-items: center;
     align-items: center;
     gap: 10px;
@@ -594,17 +594,6 @@ footer {
     font-weight: bold;
 }
 
-.inputboxAcount input[type="date"] {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #434343;
-    outline: none;
-    font-size: 16px;
-    color: black;
-    padding: 14px 45px 12px 20px;
-    border-radius: 40px;
-}
-
 .terms {
     display: flex;
     margin-right: 5px;
@@ -615,27 +604,7 @@ footer {
     margin-right: 5px;
 }
 
-.cleanAll {
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 35px;
-    height: 35px;
-    background-color: white;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #434343;
-    font-weight: 600;  
-}
-
-.cleanAll:hover {
-    background-color: rgb(36, 82, 156);
-    color: white;
-    transition: 0.5s;
-}
-
-.makeAcount {
+.formsButton {
     margin-top: 20px;
     width: 80%;
     margin-left: 35px;
@@ -649,7 +618,7 @@ footer {
     font-weight: 600;
 }
 
-.makeAcount:hover {
+.formsButton:hover {
     background-color: rgb(36, 82, 156);
     color: white;
     transition: 0.5s;
@@ -905,26 +874,6 @@ main form h1 {
     border-radius: 40px;
 }
 
-.finish {
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 35px;
-    height: 35px;
-    background-color: white;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #434343;
-    font-weight: 600;
-}
-
-.finish:hover {
-    background-color: rgb(36, 82, 156);
-    color: white;
-    transition: 0.5s;
-}
-
 /* pix page */
 
 .pixBody {
@@ -944,7 +893,7 @@ main h1 {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    max-width: 80%;
+    max-width: 100%;
     background-color: #1b3763;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
@@ -1007,12 +956,13 @@ main h1 {
     }
 
     .conteinerAcount {
-        max-width: 325px;
+        max-width: 380px;
         margin-top: 27px;
     }
 
     .containerCreditCard {
         padding: 20px 15px;
+        max-width: 380px;
     }
 
     .navlinks {
@@ -1062,8 +1012,9 @@ main h1 {
     }
 
     .conteinerPassword {
-        max-width: 325px;
+        max-width: 300px;
         margin-top: 70px;
+        margin-bottom: 70px;
     }
 
     .card {
@@ -1073,6 +1024,8 @@ main h1 {
 
     .containerLogin {
         width: 95%;
+        margin-top: 75px;
+        margin-bottom: 70px;
         padding: 25px 20px;
     }
 
@@ -1119,6 +1072,7 @@ main h1 {
     }
 
     .containerPix {
+        max-width: 420px;
         padding: 20px 35px;
     }
 
@@ -1149,5 +1103,9 @@ main h1 {
 
     .top a {
         font-size: 30px;
+    }
+
+    .conteinerPassword {
+        max-width: 380px;
     }
 }
