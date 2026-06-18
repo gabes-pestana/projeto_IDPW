@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-    <title>PlayMusic/Premium/Página de compra</title>
+    <title>PlayMusic/Login</title>
 </head>
 
-<body class="buyBody">
+<body class="loginPage">
 
     <header class="loginHeader">
 
         <span class="logo">PlayMusic</span>
 
-        <a href="./premium.html" class="home">Premium</a>
+        <a href="../index.html" class="home">Home</a>
 
     </header>
+    
+    <main class="containerLogin">
 
-    <main class="containerBuy">
+        <form>
 
-        <h1>Modo de pagamento</h1>
+            <h1>Login</h1>
 
-        <div class="cardsInfoShop">
+            <div class="inputboxLogin">
 
-            <div class="cardsShop">
+                <input placeholder="Usuário" type="email">
 
-                <h2>Cartão de crédito</h2>
-
-                <a href="./cartaoCredito.html">Continuar</a>
-
-            </div>
-
-            <div class="cardsShop">
-
-                <h3>PIX</h3>
-
-                <a href="./pix.html">Continuar</a>
+                <i class="bx bxs-user"></i>
 
             </div>
 
-        </div>
+            <div class="inputboxLogin">
+
+                <input placeholder="Senha" type="password">
+
+                <i class="bx bxs-lock-alt"></i>
+
+            </div>
+
+            <div class="remember-forgot">
+
+                <label>
+
+                <input type="checkbox">
+                    Lembrar senha
+                </label>
+
+                <a href="./forgotPassword.html">Esqueci senha</a>
+
+            </div>
+
+            <button type="submit" class="login">Login</button>
+
+            <div class="registerLink">
+
+                <p>Não possui uma conta? <a href="./createAcount.html">Cadastre-se</a></p>
+
+            </div>
+
+        </form>
 
     </main>
 
@@ -73,6 +94,6 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-    
+
 </body>
 </html>
