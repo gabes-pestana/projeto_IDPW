@@ -5,6 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* index page */
+
 .homePage {
     display: flex;
     flex-direction: column;
@@ -291,7 +293,7 @@ footer {
     color: #4771b0;
 }
 
-/* login */
+/* login page */
 
 .loginHeader {
     position: relative;
@@ -432,7 +434,7 @@ footer {
     text-decoration: underline;
 }
 
-/* passwordPage */
+/* password page */
 
 .passwordPageBody {
     display: flex;

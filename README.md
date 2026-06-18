@@ -12,7 +12,7 @@ O trabalho cumpre como objetivos o uso de responsividade, tags semânticas para 
 Para o desenvolvimento da página foi utilizado HTML e CSS.
 
 # 4.Estrutura do projeto
-A página principal do projeto está no arquivo "index.html". Na pasta "links", estão armazenados os links auxiliares que contém as páginas que possuem as demais interfaces do projeto. Na pasta "img" estão contidas as imagens utilizadas, e na pasta "music", a música utilizada para a tag <audio>. E a estilização do projeto está localizada no arquivo style, que possui a estilização de todas as páginas, porém com o conteúdo organizado por comentários orientando onde cada parte pertence.
+A página principal do projeto está no arquivo "index.html". Na pasta "links", estão armazenados os links auxiliares que contém as páginas que possuem as demais interfaces do projeto. Na pasta "img" estão contidas as imagens utilizadas, e na pasta "music", a música utilizada para a tag audio. E a estilização do projeto está localizada no arquivo style, que possui a estilização de todas as páginas, com todo o conteúdo organizado por comentários orientando onde cada parte pertence.
 
 # 5.Funcionalidades implementadas
 1. Vlibras
