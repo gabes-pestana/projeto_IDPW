@@ -235,6 +235,10 @@ span {
     font-size: 30px;
 }
 
+.audioOptions li a:hover {
+    background-color: #39619c;
+}
+
 .musicName {
     margin-bottom: -27px;
 }
@@ -256,6 +260,10 @@ span {
 footer i{
     color: white;
     font-size: 45px;
+}
+
+footer i:hover {
+    color: #4771b0;    
 }
 
 footer {
@@ -576,30 +584,6 @@ footer {
     right: 20px;      
     transform: translateY(-50%);
     color: black;
-}
-
-.inputboxAcount input[type="date"]::-webkit-calendar-picker-indicator {
-    height: 20px;
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    top: 50%;
-    right: 20px;      
-    transform: translateY(-50%);
-    cursor: pointer;
-    transform: translateY(-50%);
-}
-
-.inputboxAcount input[type="date"]::-moz-property {
-    height: 20px;
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    top: 50%;
-    right: 20px;      
-    transform: translateY(-50%);
-    cursor: pointer;
-    transform: translateY(-50%);
 }
 
 .inputboxAcount input {
